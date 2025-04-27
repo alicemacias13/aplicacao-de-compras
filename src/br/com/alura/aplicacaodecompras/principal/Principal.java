@@ -37,6 +37,8 @@ public class Principal {
             System.out.print("Deseja continuar? SIM [1] ou NAO [2]: ");
             opcao = scanner.nextInt();
         }
+        scanner.close();
+
         System.out.println("********************");
         System.out.println("Compras realizadas: ");
         System.out.println("********************");
@@ -46,6 +48,7 @@ public class Principal {
         }
         System.out.println("********************");
         System.out.println("Saldo do cartão: " + cartao.getSaldo());
+
         System.out.println("Obrigado por usar nosso programa!");
     }
 }
